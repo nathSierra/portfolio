@@ -11,6 +11,8 @@ const Header = Styled.header`
   justify-content: center;
   min-height: 9vh;
   margin-bottom: 200px;
+  text-shadow: 1px 1px 0 #998, 2px 2px 0 #998, 3px 3px 0 #998;
+  
 `
 
 export default props => (
@@ -21,12 +23,12 @@ export default props => (
         margin: '1rem',
         textDecoration: 'none',
         color: Colors.backgroundLight,
-        fontSize: '2rem',
+        fontSize: '4rem',
         padding: '0.5rem',
         borderRadius: '4px',
       }}
       activeStyle={{
-        color: Colors.primary,
+        color: 'black',
       }}
     >
       {props.children}

@@ -10,13 +10,19 @@ import Colors from '../constants/Colors'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>This is my site. So far.</h1>
+    <h1>hello.</h1>
+
     <Snippet>
-      What do we see here.
+      <p>My name is Nathan Sierra.</p>
+      <p>I am a freelance, fullstack web developer (I'm learning to love data)</p>
+      <p>However, I specialize in front-end, React.js development.</p>
+
     </Snippet>
     <Snippet inputColor={Colors.purple}>
       Yeah?
     </Snippet>
+    <Snippet inputColor={Colors.seafoam}>We see stuff here</Snippet>
+    <Snippet inputColor={Colors.primary}>What is it.</Snippet>
 
   </Layout>
 )
