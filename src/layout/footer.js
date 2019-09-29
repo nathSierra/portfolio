@@ -17,8 +17,8 @@ export const Footer = Styled.footer`
 export const FooterRow = () => {
   return (
     <Footer>
-      <a href="/"><FlexLink style={{ color: Colors.primary }} icon={faLinkedin} /></a>
-      <a href="/"><FlexLink style={{ color: Colors.primary }} icon={faGithub} /></a>
+      <a href="/"><FlexLink icon={faLinkedin} /></a>
+      <a href="/"><FlexLink icon={faGithub} /></a>
     </Footer>
   )
 }

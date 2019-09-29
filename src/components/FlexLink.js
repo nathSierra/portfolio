@@ -3,9 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const FlexLink = Styled(FontAwesomeIcon)`
 
-  transition: transform 300ms ease-in-out;
+  color: white;
+  transition: transform 300ms ease;
   &:hover {
-    transform: scale(1.3, 1.3)
+    color: black;
+    transform: translateY(-20px);
+    /* transform: scale(1.3, 1.3) */
   }
 `
 
