@@ -3,8 +3,21 @@ import Styled from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import FlexLink from '../components/FlexLink';
+
 import Colors from '../constants/Colors';
+
+
+const FlexLink = Styled(FontAwesomeIcon)`
+
+  color: white;
+  transition: transform 250ms ease;
+  &:hover {
+    color: black;
+    transform: translateY(-20px);
+    /* transform: scale(1.3, 1.3) */
+  }
+`
+
 
 export const Footer = Styled.footer`
   display: flex;
@@ -17,8 +30,8 @@ export const Footer = Styled.footer`
 export const FooterRow = () => {
   return (
     <Footer>
-      <a href="/"><FlexLink icon={faLinkedin} /></a>
-      <a href="/"><FlexLink icon={faGithub} /></a>
+      <a href="https://www.linkedin.com/in/nathsierra/"><FlexLink icon={faLinkedin} /></a>
+      <a href="https://github.com/nathSierra"><FlexLink icon={faGithub} /></a>
     </Footer>
   )
 }

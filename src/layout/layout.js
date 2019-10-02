@@ -8,12 +8,26 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import Styled from 'styled-components';
 
-import Header from "./header"
+import Header from "./Header"
 import "./layout.css"
-import { Container } from './LayoutStyle';
 import Main from './main';
-import { FooterRow } from './footer';
+import { FooterRow } from './Footer';
+
+import Colors from '../constants/Colors';
+
+export const Container = Styled.div`
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  background: ${Colors.background};
+  /* max-width: 960px; */
+  color: white;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: 'Fira Sans', sans-serif;
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
