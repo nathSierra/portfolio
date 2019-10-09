@@ -29,7 +29,7 @@ export const Container = Styled.div`
   font-family: 'Fira Sans', sans-serif;
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -43,7 +43,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Container>
-        <Header>NS</Header>
+        <Header location={location}>NS</Header>
+        {console.log(location)}
         <Main>{children}</Main>
         <FooterRow />
       </Container>

@@ -15,18 +15,18 @@ const Highlight = Styled.span`
   }
 `
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = (location) => (
+  <Layout location={location}>
     <SEO title="Home" />
     <h1>hello.</h1>
 
     <Snippet>
       <p>My name is Nathan Sierra.</p>
-      <p>I am a freelance, fullstack web developer <Highlight inputColor={Colors.yellow} hover={Colors.primary}>(I'm learning to love structuring data)</Highlight></p>
+      <p>I am a freelance, fullstack web developer. <Highlight inputColor={Colors.primary} hover={Colors.yellow}>// I'm learning to love structuring data</Highlight></p>
       <p>However, I specialize in front-end, React.js development.</p>
-      <p>I'm currently learning and practicing React Native <Highlight inputColor={Colors.yellow}>(it's really impressive how the React ecosystem can handle web and mobile development.)</Highlight></p>
-
+      <p>I'm currently learning and practicing React Native. <Highlight inputColor={Colors.primary} hover={Colors.yellow}>// I'm impressed how the React ecosystem can handle web AND mobile development</Highlight></p>
     </Snippet>
+    <h2>qualifications:</h2>
     <br></br>
     <Snippet inputColor={Colors.purple}>
       Yeah?

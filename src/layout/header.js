@@ -12,17 +12,32 @@ const Header = Styled.header`
   min-height: 9vh;
   margin-bottom: 200px;
   text-shadow: 1px 1px 0 #998, 2px 2px 0 #998, 3px 3px 0 #998;
-  
+  &:hover {
+    text-shadow: ${props => {
+    const location = props.location.pathname;
+    if (location === '/contact') {
+      return '1px 1px 0 yellow, 2px 2px 0 yellow, 3px 3px 0 yellow';
+    } else {
+      return '1px 1px 0 white, 2px 2px 0 white, 3px 3px 0 white'
+    }
+  }}}
+  a {
+    color: black;
+    /* &:hover {
+      color: white;
+    } */
+  }
 `
 
 export default props => (
-  <Header>
+  <Header location={props.location}>
+    {console.log(props)}
     <Link
       to="/"
       style={{
         margin: '1rem',
         textDecoration: 'none',
-        color: Colors.backgroundLight,
+        // color: 'black',
         fontSize: '4rem',
         padding: '0.5rem',
         borderRadius: '4px',
@@ -31,6 +46,7 @@ export default props => (
         color: 'black',
       }}
     >
+
       {props.children}
     </Link>
   </Header>
