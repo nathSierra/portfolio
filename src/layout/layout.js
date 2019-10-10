@@ -29,6 +29,11 @@ export const Container = Styled.div`
   font-family: 'Fira Sans', sans-serif;
 `
 
+const WidthRestrictor = Styled.div`
+  max-width: 960;
+  padding: 1rem;
+`
+
 const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -43,10 +48,12 @@ const Layout = ({ children, location }) => {
   return (
     <>
       <Container>
-        <Header location={location}>NS</Header>
-        {console.log(location)}
-        <Main>{children}</Main>
-        <FooterRow />
+        <WidthRestrictor>
+          <Header location={location}>NS</Header>
+          {console.log(location)}
+          <Main>{children}</Main>
+          <FooterRow />
+        </WidthRestrictor>
       </Container>
     </>
   )

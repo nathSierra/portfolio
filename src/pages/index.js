@@ -4,16 +4,10 @@ import React from "react"
 import Layout from "../layout/layout"
 import SEO from "../components/seo"
 import Snippet from "../components/Snippet"
-import Styled from 'styled-components';
+import Highlight from '../components/Highlight'
 
 import Colors from '../constants/Colors'
 
-const Highlight = Styled.span`
-  color: ${props => props.inputColor || 'grey'};
-  &:hover {
-    color: ${props => props.hover || 'white'}
-  }
-`
 
 const IndexPage = (location) => (
   <Layout location={location}>
@@ -22,9 +16,9 @@ const IndexPage = (location) => (
 
     <Snippet>
       <p>My name is Nathan Sierra.</p>
-      <p>I am a freelance, fullstack web developer. <Highlight inputColor={Colors.primary} hover={Colors.yellow}>// I'm learning to love structuring data</Highlight></p>
+      <p>I am a freelance, fullstack web developer. <Highlight inputColor={Colors.primary}>// I'm learning to love structuring data</Highlight></p>
       <p>However, I specialize in front-end, React.js development.</p>
-      <p>I'm currently learning and practicing React Native. <Highlight inputColor={Colors.primary} hover={Colors.yellow}>// I'm impressed how the React ecosystem can handle web AND mobile development</Highlight></p>
+      <p>I'm currently learning and practicing React Native. <Highlight inputColor={Colors.primary}>// I'm impressed how the React ecosystem can handle web AND mobile development</Highlight></p>
     </Snippet>
     <h2>qualifications:</h2>
     <br></br>

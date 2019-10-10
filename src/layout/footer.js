@@ -23,7 +23,7 @@ export const Footer = Styled.footer`
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  padding-bottom: 2rem;
   font-size: 4rem
 `
 

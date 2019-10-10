@@ -9,6 +9,10 @@ const Snippet = Styled.div`
   font-family: 'Inconsolata', monospace;
   margin-bottom: 4vh;
   padding: 0.5vw;
+  &::selection {
+    background-color: red;
+    /* caret-color: red; */
+  }
   
 `
 
