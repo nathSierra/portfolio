@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "nathansweb",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nathan Sierra <arreisnahtan@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -13,6 +13,7 @@
     "@reach/router": "^1.2.1",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.15.28",
+    "gatsby-cli": "^2.8.3",
     "gatsby-image": "^2.2.23",
     "gatsby-plugin-manifest": "^2.2.20",
     "gatsby-plugin-offline": "^3.0.11",

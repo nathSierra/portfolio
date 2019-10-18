@@ -77,7 +77,7 @@ export default props => (
         {props.children}
       </Link>
     </Title>
-    <NavLink
+    {/* <NavLink
       to="/contact"
       style={{
         color: `${Colors.primary}`
@@ -85,7 +85,7 @@ export default props => (
       activeStyle={{
         color: `${Colors.yellow}`
       }}
-    >Contact</NavLink>
+    >Contact</NavLink> */}
   </Header>
 )
 
