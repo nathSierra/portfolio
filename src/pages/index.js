@@ -34,7 +34,7 @@ const IndexPage = (location) => (
       <p>Well.</p>
       <p>At first I was overwhelmed by the deluge of comp sci info.<Highlight inputColor={Colors.primary}> // I thought I couldn't possibly learn it.</Highlight></p>
       <p>It's tough.</p>
-      <p>However, my mindset has changed drastically.</p>
+      <p>Since taking the plunge my mindset has changed drastically.</p>
       <p>I don't want to be deny myself the opportunity to become a software developer purely due to fear.</p>
       <p>Now I'm glad I have the opportunity to use what I've learned to create products and solve problems.</p>
       <p>I'm dedicating myself to learning something new in software everyday.
