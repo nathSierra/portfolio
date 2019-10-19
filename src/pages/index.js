@@ -27,11 +27,11 @@ const IndexPage = (location) => (
       <p>I also work part time as a tutor and teaching assistant.</p>
       <p>I'm dedicating myself to learning something new in software everyday.
       <Highlight inputColor={Colors.primary}>// to be frank, I don't see that ever stopping.</Highlight></p>
-      <p>Technology has the power to transform the world for the better; I hope to be a part of that initiative.</p>
+      <p>Technology has the power to transform the world for the better; we have the responsibility to make it so.</p>
     </Snippet>
     <h1 style={{color: Colors.seafoam}}>contact</h1>
     <Snippet inputColor={Colors.seafoam}>
-      <p>So! If you think you'd benefit from having someone like me on your team, don't hesistate to reach out! </p>
+      <p>If you wanna talk about a project or nerd out about tech, don't hesitate to reach out!</p>
       <p>Contact me at <a href='mailto:arreisnahtan@gmail.com' style={{color: `${Colors.purple}`}}>arreisnahtan@gmail.com</a> </p></Snippet>
     
 
