@@ -30,8 +30,8 @@ export const Footer = Styled.footer`
 export const FooterRow = () => {
   return (
     <Footer>
-      <a href="https://www.linkedin.com/in/nathsierra/"><FlexLink icon={faLinkedin} /></a>
-      <a href="https://github.com/nathSierra"><FlexLink icon={faGithub} /></a>
+      <a href="https://www.linkedin.com/in/nathsierra/" target="_blank"><FlexLink icon={faLinkedin} /></a>
+      <a href="https://github.com/nathSierra" target="_blank"><FlexLink icon={faGithub} /></a>
     </Footer>
   )
 }
