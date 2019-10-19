@@ -21,7 +21,7 @@ const IndexPage = (location) => (
       <p>Now I learn about computers, talk to computers, and talk about computers.</p>
       <p>I am a freelance, fullstack web developer. <Highlight inputColor={Colors.primary}>// a self-taught > bootcamp > self-taught sequence</Highlight></p>
       <p>However, I specialize in front-end, React.js development. <Highlight inputColor={Colors.primary}> // this doesn't mean I'm against Angular-- I see the benefits.</Highlight></p>
-      <p>And yes, I do subscribe to the thought that there's an <a href="https://css-tricks.com/the-great-divide/" style={{color: `${Colors.purple}`}} target="_blank">interesting discussion</a> about the current state of front end development.</p>
+      <p>And yes, I do subscribe to the thought that there's an <a href="https://css-tricks.com/the-great-divide/" style={{color: `${Colors.purple}`}} target="_blank">interesting discussion</a> regarding the current state of front end development.</p>
       <p>I also work part time as a tutor and teaching assistant to help others along their coding journeys.</p>
       <p>I'm currently learning and practicing React Native. I should have a few projects out on the App Store soon. <Highlight inputColor={Colors.primary}>// fingers crossed</Highlight></p>
     </Snippet>
