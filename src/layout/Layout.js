@@ -7,12 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import Styled from 'styled-components';
 
 import Header from "./Header"
 import "./layout.css"
-import Main from './main';
+import Main from './Main';
 import { FooterRow } from './Footer';
 
 import Colors from '../constants/Colors';
@@ -35,16 +35,6 @@ const WidthRestrictor = Styled.div`
 `
 
 const Layout = ({ children, location }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <Container>
